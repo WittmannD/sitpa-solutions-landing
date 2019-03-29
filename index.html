@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1PgYdXWhcSZ0JFC-_VTNEBcDaNZWcFHk&callback=initMap" async defer></script>
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header id="home">
+        <div class="header-container" id="sticky">
+            <div class="logo">
+                <a href="#"><img src="./img/merged%20logo.png" alt=""></a>
+            </div>
+            <nav id="nav">
+                <span class="runner" id="runner"></span>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#company">Company</a></li>
+                    <li><a href="#aoe">Areas of expertise</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="main__slider">
+            <div class="array left" onclick="slideLeft('prev')"></div>
+            <div class="carousel">
+                <div class="slider-container" id="slide" style="left: 0px">
+                    <div class="item" data-bgurl="./img/photo%201.png">
+                        <div class="info">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, vitae.
+                        </div>
+                    </div>
+                    <div class="item" data-bgurl="./img/photo%202.png">
+                        <div class="info">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus architecto nemo pariatur quo! Laboriosam, laborum!
+                        </div>
+                    </div>
+                    <div class="item" data-bgurl="./img/photo%203.png">
+                        <div class="info">
+                            A aliquam amet animi architecto commodi consectetur dolores ducimus ex, iure laborum libero magnam nisi odit provident quasi suscipit ullam voluptates. Iste.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="array right" onclick="slideLeft('next')"></div>
+            <div class="slider-nav" id="slider-nav"><ol></ol></div>
+        </section>
+        <section class="main__about grid-table" id="company">
+            <div class="title">
+                <h2>Lorem ipsum</h2>
+            </div>
+            <div class="button">
+                <button>Read more</button>
+            </div>
+            <div class="content">
+                <p>
+                    <b>Lorem ipsum dolor sit amet</b>, consectetur adipisicing elit. A aperiam, asperiores aut autem
+                    consectetur corporis dolorem ducimus eius est facere hic illum incidunt laudantium nobis non nulla
+                    numquam obcaecati omnis quaerat quasi reprehenderit similique temporibus, ullam velit veritatis?
+                </p>
+                <p>
+                    Aperiam aspernatur assumenda beatae commodi corporis, <b>culpa distinctio</b> esse est et excepturi
+                    explicabo fuga fugiat illum in, ipsa iure libero molestias natus nesciunt nihil nisi nulla placeat
+                    praesentium quas quibusdam ratione reprehenderit sapiente sunt suscipit, velit. Quaerat reiciendis,
+                    totam? Cumque, magni, praesentium.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus? Alias asperiores, cumque,
+                    delectus, doloribus eveniet illum nam non quaerat quas ratione sapiente temporibus vitae.
+                </p>
+                <br>
+                <p>
+                    Alias, amet beatae
+                    consectetur, consequatur dolore dolorum ducimus ea eveniet facilis, fugiat minima officia optio
+                    pariatur rerum tempora temporibus vitae.<i> Architecto impedit laborum odio</i>, qui quibusdam vel.
+                </p>
+                <p>
+                    A aperiam, asperiores aut autem
+                    consectetur corporis dolorem ducimus eius est facere hic illum incidunt laudantium nobis non nulla
+                    numquam obcaecati omnis quaerat quasi reprehenderit similique temporibus, ullam velit veritatis?
+                </p>
+            </div>
+        </section>
+        <section class="main__notes">
+            <div class="content grid-table" id="aoe">
+                <div class="title">
+                    <h2>Areas of expertise</h2>
+                </div>
+                <div class="item a">
+                    <div class="item__icon"><img src="./img/web%20&%20mobile.svg" alt=""></div>
+                    <div class="item__title"><h3>Web & mobile app development</h3></div>
+                    <div class="item__content">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab aperiam cumque, debitis dicta doloribus earum explicabo id nihil repellat, sed vitae voluptatibus voluptatum. Exercitationem explicabo fugiat impedit, mollitia officia officiis omnis quam repellendus soluta unde. Accusamus adipisci aliquam aspernatur, atque aut autem beatae eius excepturi fuga in iste, magni natus neque nisi odit officia optio perspiciatis praesentium quaerat quam quasi quia quo reiciendis rem, repellat sit unde ut voluptatem!
+                        </p>
+                    </div>
+                </div>
+                <div class="item b">
+                    <div class="item__icon"><img src="./img/software%20engineering%20icon.svg" alt=""></div>
+                    <div class="item__title"><h3>Software engineering</h3></div>
+                    <div class="item__content">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto consequatur, dolore eligendi esse est eveniet explicabo fugiat hic iste laboriosam nam non porro provident quidem quo quod ratione, reprehenderit sint ullam voluptas. Ad amet aperiam dolorum enim, eos expedita fugiat hic impedit magni natus nobis quibusdam saepe sit temporibus, ullam!
+                        </p>
+                    </div>
+                </div>
+                <div class="line"><hr></div>
+                <div class="item c">
+                    <div class="item__icon"><img src="./img/technical%20assistance%20icon.svg" alt=""></div>
+                    <div class="item__title"><h3>Technical assistance</h3></div>
+                    <div class="item__content">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto consequatur, dolore eligendi esse est eveniet explicabo fugiat hic iste laboriosam nam non porro provident quidem quo quod ratione, reprehenderit sint ullam voluptas. Ad amet aperiam dolorum enim, eos expedita fugiat hic impedit magni natus nobis quibusdam saepe sit temporibus, ullam!
+                        </p>
+                    </div>
+                </div>
+                <div class="item d">
+                    <div class="item__icon"><img src="./img/consulting%20&%20innovation%20icon.svg" alt=""></div>
+                    <div class="item__title"><h3>Consulting & innovation</h3></div>
+                    <div class="item__content">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab aperiam cumque, debitis dicta doloribus earum explicabo id nihil repellat, sed vitae voluptatibus voluptatum. Exercitationem explicabo fugiat impedit, mollitia officia officiis omnis quam repellendus soluta unde. Accusamus adipisci aliquam aspernatur, atque aut autem beatae eius excepturi fuga in iste, magni natus neque nisi odit officia optio perspiciatis praesentium quaerat quam quasi quia quo reiciendis rem, repellat sit unde ut voluptatem!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="contact grid-table" id="contact">
+            <div class="title">
+                <h2>Contacts</h2>
+            </div>
+            <div class="info">
+                <h3>Danil Wittmann, DONNU</h3>
+                <hr>
+                <ul>
+                    <li class="office">600-Richchya St, 21, Vinnytsia</li>
+                    <li class="email">email@donnu.edu.ua</li>
+                    <li class="phone">+380(432)777-777</li>
+                </ul>
+            </div>
+            <div class="form">
+                <form>
+                    <input type="text" placeholder="Contact Person">
+                    <input type="email" placeholder="Contact E-Mail or Phone Number">
+                    <textarea placeholder="Message"></textarea>
+                    <input type="submit">
+                </form>
+            </div>
+            <div class="map" id="map"></div>
+        </section>
+        <section class="meta">
+            <a href="#">Privacy Policy</a><a href="#">Disclaimer</a>
+        </section>
+    </footer>
+</body>
+
+</html>

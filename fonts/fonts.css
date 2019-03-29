@@ -1,0 +1,61 @@
+/* Flamante Cairo */
+
+@font-face{
+    font-family: 'FlamanteCairo';
+    src: url('./Flamante_cairo/Flamante-Cairo.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'FlamanteCairo';
+    src: url('./Flamante_cairo/Flamante-Cairo-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Amazing Infographic@ */
+
+@font-face{
+    font-family: 'AmazingInfographic';
+    src: url('./Amazing_infographic/Amazing Infographic@.otf') format('opentype');
+    font-style: normal;
+}
+
+/* Roboto */
+/*
+@font-face {
+    font-family: 'Roboto';
+    font-weight: 300;
+    src: url('./Roboto/Roboto-Thin.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 400;
+    src: url('./Roboto/Roboto-Italic.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 500;
+    src: url('./Roboto/Roboto-MediumItalic.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./Roboto/Roboto-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url('./Roboto/Roboto-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./Roboto/Roboto-Bold.ttf') format('truetype');
+}
+*/
