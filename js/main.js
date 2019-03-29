@@ -73,8 +73,8 @@ function goTo(event) {
 }
 
 function readmore(e) {
-    var content = document.querySelector('#company > div.content');
-    content.style.height = parseInt(content.style.height) ? 'max-content' : '270px';
+    var content = document.querySelector('#company > div.content > div.more');
+    content.style.display = e.textContent === 'Less' ? 'none' : 'inline-block';
     e.textContent = e.textContent === 'Less' ? 'Read more' : 'Less';
 }
 
@@ -105,7 +105,7 @@ function slideLeft(count) {
         } else {
             sticky.classList.remove('sticky');
         }
-
+        /*-- Navigation / Magic line menu --*/
         for(var i = 0; i < offsets.length; i++) {
             if(window.pageYOffset >= offsets[i] && window.pageYOffset < offsets[i+1]) {
                 nav.querySelector('a[href="#' + sections[i].id + '"]').classList.add("active");
@@ -146,6 +146,7 @@ function slideLeft(count) {
     var isPaused = false,
         offWidth = document.body.offsetWidth;
 
+
     for (i = 0; i < item.length; i++) {
         item[i].style.width = offWidth + 'px';
         item[i].style.backgroundImage = 'url(' + item[i].dataset.bgurl + ')';
@@ -157,7 +158,8 @@ function slideLeft(count) {
             });
         })(item, i)
     }
-    setInterval(function() {
+
+    setInterval(function() {  // Carousel interval
         if (!isPaused) {
             slideLeft('next');
         }

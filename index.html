@@ -14,7 +14,7 @@
     <header id="home">
         <div class="header-container" id="sticky">
             <div class="logo">
-                <a href="#"><img src="./img/merged%20logo.png" alt=""></a>
+                <a href="#"><img src="./img/merged_logo.png" alt=""></a>
             </div>
             <nav id="nav">
                 <span class="runner" id="runner"></span>
@@ -22,7 +22,7 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#company">Company</a></li>
                     <li><a href="#aoe">Areas of expertise</a></li>
-                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#">Projects</a></li>
                     <li><a href="#contact">Contacts</a></li>
                 </ul>
             </nav>
@@ -33,17 +33,17 @@
             <div class="array left" onclick="slideLeft('prev')"></div>
             <div class="carousel">
                 <div class="slider-container" id="slide" style="left: 0px">
-                    <div class="item" data-bgurl="./img/photo%201.png">
+                    <div class="item" data-bgurl="./img/photo1.png">
                         <div class="info">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, vitae.
                         </div>
                     </div>
-                    <div class="item" data-bgurl="./img/photo%202.png">
+                    <div class="item" data-bgurl="./img/photo2.png">
                         <div class="info">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus architecto nemo pariatur quo! Laboriosam, laborum!
                         </div>
                     </div>
-                    <div class="item" data-bgurl="./img/photo%203.png">
+                    <div class="item" data-bgurl="./img/photo3.png">
                         <div class="info">
                             A aliquam amet animi architecto commodi consectetur dolores ducimus ex, iure laborum libero magnam nisi odit provident quasi suscipit ullam voluptates. Iste.
                         </div>
@@ -56,9 +56,6 @@
         <section class="main__about grid-table" id="company">
             <div class="title">
                 <h2>Lorem ipsum</h2>
-            </div>
-            <div class="button">
-                <button>Read more</button>
             </div>
             <div class="content">
                 <p>
@@ -76,17 +73,21 @@
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus? Alias asperiores, cumque,
                     delectus, doloribus eveniet illum nam non quaerat quas ratione sapiente temporibus vitae.
                 </p>
-                <br>
-                <p>
-                    Alias, amet beatae
-                    consectetur, consequatur dolore dolorum ducimus ea eveniet facilis, fugiat minima officia optio
-                    pariatur rerum tempora temporibus vitae.<i> Architecto impedit laborum odio</i>, qui quibusdam vel.
-                </p>
-                <p>
-                    A aperiam, asperiores aut autem
-                    consectetur corporis dolorem ducimus eius est facere hic illum incidunt laudantium nobis non nulla
-                    numquam obcaecati omnis quaerat quasi reprehenderit similique temporibus, ullam velit veritatis?
-                </p>
+                <div class="more">
+                    <p>
+                        Alias, amet beatae
+                        consectetur, consequatur dolore dolorum ducimus ea eveniet facilis, fugiat minima officia optio
+                        pariatur rerum tempora temporibus vitae.<i> Architecto impedit laborum odio</i>, qui quibusdam vel.
+                    </p>
+                    <p>
+                        A aperiam, asperiores aut autem
+                        consectetur corporis dolorem ducimus eius est facere hic illum incidunt laudantium nobis non nulla
+                        numquam obcaecati omnis quaerat quasi reprehenderit similique temporibus, ullam velit veritatis?
+                    </p>
+                </div>
+            </div>
+            <div class="button">
+                <button onclick="readmore(this)">Read more</button>
             </div>
         </section>
         <section class="main__notes">
@@ -95,7 +96,7 @@
                     <h2>Areas of expertise</h2>
                 </div>
                 <div class="item a">
-                    <div class="item__icon"><img src="./img/web%20&%20mobile.svg" alt=""></div>
+                    <div class="item__icon"><img src="./img/item-icon4.svg" alt=""></div>
                     <div class="item__title"><h3>Web & mobile app development</h3></div>
                     <div class="item__content">
                         <p>
@@ -104,7 +105,7 @@
                     </div>
                 </div>
                 <div class="item b">
-                    <div class="item__icon"><img src="./img/software%20engineering%20icon.svg" alt=""></div>
+                    <div class="item__icon"><img src="./img/item-icon2.svg" alt=""></div>
                     <div class="item__title"><h3>Software engineering</h3></div>
                     <div class="item__content">
                         <p>
@@ -114,7 +115,7 @@
                 </div>
                 <div class="line"><hr></div>
                 <div class="item c">
-                    <div class="item__icon"><img src="./img/technical%20assistance%20icon.svg" alt=""></div>
+                    <div class="item__icon"><img src="./img/item-icon3.svg" alt=""></div>
                     <div class="item__title"><h3>Technical assistance</h3></div>
                     <div class="item__content">
                         <p>
@@ -123,7 +124,7 @@
                     </div>
                 </div>
                 <div class="item d">
-                    <div class="item__icon"><img src="./img/consulting%20&%20innovation%20icon.svg" alt=""></div>
+                    <div class="item__icon"><img src="./img/item-icon1.svg" alt=""></div>
                     <div class="item__title"><h3>Consulting & innovation</h3></div>
                     <div class="item__content">
                         <p>

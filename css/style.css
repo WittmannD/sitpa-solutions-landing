@@ -129,7 +129,7 @@ section {
     display: flex;
     align-items: center;
     background-color: #8B5E3F;
-    background-size: auto 100%;
+    background-size: 100% 100%;
     background-position: center center;
     width: 100vw;
 }
@@ -154,7 +154,7 @@ section {
     top: 260px;
     width: 40px;
     height: 40px;
-    background: url('../img/slider arrow.png') no-repeat;
+    background: url('../img/slider_arrow.png') no-repeat;
     border-radius: 50%;
     cursor: pointer;
     border: 1px solid white;
@@ -201,7 +201,7 @@ section {
     align-items: stretch;
 
     width: 100%;
-    background: url('../img/pattern above it.png') #376179;
+    background: url('../img/pattern.png') #376179;
     color: #dfdfdf;
 }
 
@@ -213,8 +213,11 @@ section {
     grid-row: 2;
     padding: 40px 50px;
     box-sizing: border-box;
-    height: 270px;
-    overflow: hidden;
+    min-height: 270px;
+    transition: 200ms ease;
+}
+.main__about .content .more {
+    display: none;
 }
 .main__about .button {
     grid-column: 3 / span 2;
@@ -250,7 +253,7 @@ section {
 .main__notes {
     padding: 100px 0;
     width: 100%;
-    background: url('../img/coding process.png') #376179 fixed;
+    background: url('../img/bg.png') #376179 fixed;
 }
 .main__notes .content {
     grid-template-rows: repeat(4, min-content);
@@ -345,13 +348,13 @@ footer .contact .info ul li:before {
     text-align: center;
 }
 footer .contact .info ul li.office:before {
-    content: url('../img/office address.svg');
+    content: url('../img/icon2.svg');
 }
 footer .contact .info ul li.email:before {
-    content: url('../img/email.svg');
+    content: url('../img/icon1.svg');
 }
 footer .contact .info ul li.phone:before {
-    content: url('../img/phone.svg');
+    content: url('../img/icon3.svg');
 }
 
 footer .contact .info hr {
